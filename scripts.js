@@ -1,4 +1,5 @@
 var items = [];
+document.getElementById('ItemBox').value = '';
 
 function addToDo (evt) {
   if (evt.keyCode === 13) {
@@ -10,8 +11,6 @@ function addToDo (evt) {
     bindList(val);
     document.getElementById('ItemBox').value = '';
   }
-
-  
 }
 
 function bindList (itemVal) {
@@ -24,7 +23,6 @@ function bindList (itemVal) {
   list.appendChild(li);
 }
 
-function deleteItem (e) { 
-  console.log(e.currentTarget.parentNode.parentNode);
+function deleteItem (e) {
   e.currentTarget.parentNode.parentNode.remove();
 }
