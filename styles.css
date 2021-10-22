@@ -1,0 +1,40 @@
+.fas {
+  cursor: pointer;
+}
+
+.todo-container {
+  position: relative;
+  width: 100%;
+  padding: 0 3rem;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+.todo-container h1 {
+  text-align: center;
+}
+
+.todo-container #ItemBox {
+  width: 40%;
+  height: 3rem;
+  padding: 0 1rem;
+}
+
+.todo-container #ToDoList {
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+#ToDoList li {
+  list-style: none;
+  max-width: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 10rem;
+  padding: 0 1rem;
+}
